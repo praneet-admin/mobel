@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0b2545" />
+<meta name="robots" content="noindex" />
+<title>Thank you — Mobel</title>
+<link rel="icon" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="mobel-v2.css" />
+<style>
+  /* Zoho redirects here after a submission. With JavaScript on, that
+     happens inside a hidden iframe and nobody sees this page; it is
+     the visible confirmation only when scripting is off. */
+  .thanks {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 48px 20px;
+    background: radial-gradient(120% 80% at 20% 0%, #1b4d8f 0%, #0b2545 55%, #061426 100%);
+    color: #fff;
+    text-align: center;
+  }
+  .thanks__card { max-width: 560px; }
+  .thanks__tick {
+    width: 72px; height: 72px; margin: 0 auto 24px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: rgba(232, 200, 143, .15);
+    border: 1px solid rgba(232, 200, 143, .5);
+  }
+  .thanks__tick svg { width: 34px; height: 34px; fill: none; stroke: #e8c88f; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  .thanks h1 { font-family: var(--font-display, "Sora", sans-serif); font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 14px; }
+  .thanks p { color: rgba(255, 255, 255, .8); line-height: 1.6; margin: 0 0 28px; }
+</style>
+</head>
+<body>
+<main class="thanks">
+  <div class="thanks__card">
+    <div class="thanks__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h1>Got it. It's with our operations desk.</h1>
+    <p>You'll hear back with a route, a transit time and a landed-cost price inside 24 hours, usually the same day.</p>
+    <a href="./" class="btn btn--gold">Back to Mobel</a>
+  </div>
+</main>
+</body>
+</html>

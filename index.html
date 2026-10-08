@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0b2545" />
+<title>Mobel — Import, Export &amp; Global Freight Forwarding</title>
+
+<meta name="description" content="Mobel is a licensed freight forwarder and customs broker. Ocean and air freight, customs clearance, warehousing and wholesale supply — one team, one invoice, one landed cost." />
+<link rel="canonical" href="https://praneet-admin.github.io/mobel/" />
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Mobel — Import, Export &amp; Global Freight Forwarding" />
+<meta property="og:description" content="Freight, customs and wholesale supply held by one team. Full landed cost quoted up front." />
+<meta property="og:image" content="https://praneet-admin.github.io/mobel/hero-image.png" /> 
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="preload" as="image" href="hero-image.png" fetchpriority="high" />
+<link rel="stylesheet" href="mobel-v2.css?v=2" />
+
+<!-- Inline and before the first paint on purpose. The scroll-reveal CSS
+     only hides anything when this class is present, so with JavaScript
+     off the page renders complete instead of blank. -->
+<script>document.documentElement.classList.add("js");</script>
+
+<!-- Search engines read this to show the business as a rich result.
+     Replace the placeholder phone, email and address before going live. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mobel",
+  "description": "Import, export, freight forwarding, customs clearance and wholesale supply.",
+  "url": "https://praneet-admin.github.io/mobel/",
+  "logo": "logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+00-000-000-0000",
+    "contactType": "sales",
+    "availableLanguage": ["English"]
+  }
+}
+</script>
+</head>
+
+<body>
+
+<!-- Keyboard users land here first: one tab, one Enter, straight past the nav. -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============================================================
+     UTILITY BAR — contact details above the fold, always.
+     Hidden under 900px, where the same details live in the menu.
+     ============================================================ -->
+<div class="topbar">
+  <div class="shell topbar__inner">
+    <p class="topbar__note">
+      <span class="pulse" aria-hidden="true"></span>
+      Operations desk open 24/7 across every time zone we ship in
+    </p>
+    <div class="topbar__links">
+      <!-- TODO: replace with Mobel's real phone and inbox -->
+      <a href="tel:+000000000000">+00 000 000 0000</a>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <a href="mailto:trade@mobel.com">trade@mobel.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER — sticky. Adds .is-scrolled past 40px (see mobel-v2.js),
+     which tightens it and drops the glass shadow in.
+     ============================================================ -->
+<header class="header" id="header">
+  <div class="shell header__inner">
+
+    <a href="#home" class="brand" aria-label="Mobel — home">
+      <img src="logo.png" alt="" class="brand__mark" width="830" height="540" />
+      <span class="brand__text">
+        MOBEL
+        <small>Global Trade</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#lanes" class="nav__link">Trade Lanes</a></li>
+        <li><a href="#wholesale" class="nav__link">Wholesale</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+      </ul>
+
+      <!-- Only rendered inside the mobile panel; hidden on desktop. On the
+           narrowest screens the header's own CTA is dropped for room, so it
+           is repeated here rather than lost. -->
+      <div class="nav__meta">
+        <a href="#contact" class="btn btn--gold btn--full nav__cta">Get a Quote</a>
+        <a href="tel:+000000000000">+00 000 000 0000</a>
+        <a href="mailto:trade@mobel.com">trade@mobel.com</a>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--gold btn--sm">Get a Quote</a>
+
+      <button class="burger" id="burger" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+
+  <!-- Photo lives in its own layer so it can drift (Ken Burns) without
+       dragging the gradient, the grain or the copy along with it. -->
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__photo"></div>
+    <div class="hero__veil"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="shell hero__inner">
+
+    <div class="hero__copy">
+
+      <p class="eyebrow eyebrow--light reveal">
+        <span class="eyebrow__dot" aria-hidden="true"></span>
+        Freight forwarder &amp; customs broker
+      </p>
+
+      <h1 class="hero__title reveal" data-reveal-delay="1">
+        Moving your cargo across
+        <span class="grad">every border</span>
+        that stands in the way.
+      </h1>
+
+      <p class="hero__lead reveal" data-reveal-delay="2">
+        Ocean and air freight, customs clearance, warehousing and wholesale
+        supply — held by one team, quoted as one landed cost, and answered
+        for by one person you can actually reach.
+      </p>
+
+      <div class="hero__actions reveal" data-reveal-delay="3">
+        <a href="#contact" class="btn btn--gold">
+          Get a landed-cost quote
+          <svg viewBox="0 0 24 24" class="btn__arrow" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn--ghost">Explore services</a>
+      </div>
+
+      <ul class="hero__trust reveal" data-reveal-delay="4">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          Licensed &amp; bonded
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Quote inside 24 hours
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17h16M4 12h16M4 7h16"/></svg>
+          One invoice, all-in
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Glass quote card. It is a real form: it posts nothing on its own,
+         it hands what you typed to the full form at #contact so nobody
+         types the same three answers twice. -->
+    <aside class="quote reveal" data-reveal-delay="2" aria-labelledby="quote-title">
+      <div class="quote__head">
+        <h2 id="quote-title">Start a shipment</h2>
+        <p>Three lines is enough to price a lane.</p>
+      </div>
+
+      <form class="quote__form" id="quick-quote" novalidate>
+        <div class="field">
+          <label for="q-from">Origin</label>
+          <input type="text" id="q-from" name="from" placeholder="Shanghai, CN" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="q-to">Destination</label>
+          <input type="text" id="q-to" name="to" placeholder="Rotterdam, NL" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="q-mode">Mode</label>
+          <select id="q-mode" name="mode">
+            <option>Ocean — FCL</option>
+            <option>Ocean — LCL</option>
+            <option>Air freight</option>
+            <option>Customs clearance only</option>
+            <option>Wholesale supply</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--navy btn--full">
+          Continue
+          <svg viewBox="0 0 24 24" class="btn__arrow" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+
+      <p class="quote__foot">No account, no obligation. We reply with a route, a transit time and a price.</p>
+    </aside>
+
+  </div>
+
+  <a href="#ticker" class="hero__scroll" aria-label="Scroll to next section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============================================================
+     PORT TICKER — the marquee doubles its own content in the markup
+     so the loop can restart with no visible seam.
+     ============================================================ -->
+<section class="ticker" id="ticker" aria-label="Ports we operate through">
+  <div class="ticker__track">
+    <ul class="ticker__row">
+      <li>Shanghai</li><li>Rotterdam</li><li>Singapore</li><li>Jebel Ali</li>
+      <li>Los Angeles</li><li>Hamburg</li><li>Mundra</li><li>Busan</li>
+      <li>Santos</li><li>Antwerp</li><li>Nhava Sheva</li><li>Felixstowe</li>
+    </ul>
+    <ul class="ticker__row" aria-hidden="true">
+      <li>Shanghai</li><li>Rotterdam</li><li>Singapore</li><li>Jebel Ali</li>
+      <li>Los Angeles</li><li>Hamburg</li><li>Mundra</li><li>Busan</li>
+      <li>Santos</li><li>Antwerp</li><li>Nhava Sheva</li><li>Felixstowe</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS — counters animate once, when scrolled into view.
+     TODO: every figure below is a placeholder. Swap in Mobel's real
+     numbers before this site goes live.
+     ============================================================ -->
+<section class="stats" aria-label="Mobel by the numbers">
+  <div class="shell stats__grid">
+
+    <div class="stat reveal">
+      <p class="stat__num"><span data-count="1200" data-suffix="+">0</span></p>
+      <p class="stat__label">Containers cleared a year</p>
+    </div>
+    <div class="stat reveal" data-reveal-delay="1">
+      <p class="stat__num"><span data-count="42" data-suffix="">0</span></p>
+      <p class="stat__label">Countries served</p>
+    </div>
+    <div class="stat reveal" data-reveal-delay="2">
+      <p class="stat__num"><span data-count="98" data-suffix="%">0</span></p>
+      <p class="stat__label">On-time clearance rate</p>
+    </div>
+    <div class="stat reveal" data-reveal-delay="3">
+      <p class="stat__num"><span data-count="24" data-suffix="h">0</span></p>
+      <p class="stat__label">Average quote turnaround</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="shell">
+
+    <header class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> What we do</p>
+      <h2 class="section__title">Everything between your supplier and your shelf</h2>
+      <p class="section__lead">
+        Six services, one file, one point of contact. Nothing gets handed to a
+        third party and lost in the gap between two companies.
+      </p>
+    </header>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17s2-1 4.5-1 3 1 4.5 1 2-1 4.5-1 4.5 1 4.5 1"/><path d="M5 14V9h14v5"/><path d="M9 9V6h6v3"/><path d="M12 6V4"/></svg>
+        </div>
+        <h3>Ocean freight</h3>
+        <p>FCL and LCL on every major lane, with vessel space held ahead of peak season rather than chased during it.</p>
+        <ul class="card__list">
+          <li>FCL 20ft / 40ft / HC</li>
+          <li>LCL consolidation</li>
+          <li>Reefer &amp; out-of-gauge</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Ocean freight — FCL">
+          Quote ocean freight
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal" data-reveal-delay="1">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 2.5L10.8 13.2"/><path d="M21.5 2.5l-6.8 19-3.9-8.3-8.3-3.9z"/></svg>
+        </div>
+        <h3>Air freight</h3>
+        <p>When the lead time is the whole problem. Consolidated, express and charter, with airport-to-door as standard.</p>
+        <ul class="card__list">
+          <li>Next-flight-out</li>
+          <li>Consolidated economy</li>
+          <li>Temperature controlled</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Air freight">
+          Quote air freight
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal" data-reveal-delay="2">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M9 14l2 2 4-4"/></svg>
+        </div>
+        <h3>Customs clearance</h3>
+        <p>Classification, valuation and entry filed in-house. We tell you the duty before you buy, not after it lands.</p>
+        <ul class="card__list">
+          <li>HS classification</li>
+          <li>Duty &amp; tax modelling</li>
+          <li>Licences &amp; certificates</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Customs clearance only">
+          Quote customs clearance
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal" data-reveal-delay="3">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6v10a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M8 21v-7h8v7"/></svg>
+        </div>
+        <h3>Warehousing</h3>
+        <p>Bonded and general storage at both ends of the lane, so stock waits where it costs least to wait.</p>
+        <ul class="card__list">
+          <li>Bonded storage</li>
+          <li>Pick, pack &amp; relabel</li>
+          <li>Inventory reporting</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Warehousing">
+          Quote warehousing
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal" data-reveal-delay="4">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v8H3z"/><path d="M14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        </div>
+        <h3>Door-to-door</h3>
+        <p>First mile, main leg, last mile and the paperwork in between — tracked as one shipment, not four bookings.</p>
+        <ul class="card__list">
+          <li>Factory collection</li>
+          <li>Drayage &amp; trucking</li>
+          <li>Final-mile delivery</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Not sure yet — advise me">
+          Quote door-to-door
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal" data-reveal-delay="5">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8l8-4 8 4-8 4z"/><path d="M4 8v8l8 4 8-4V8"/><path d="M12 12v8"/></svg>
+        </div>
+        <h3>Wholesale supply</h3>
+        <p>Buy landed stock at import pricing without running your own overseas purchasing, shipping or clearance.</p>
+        <ul class="card__list">
+          <li>Pallet &amp; container loads</li>
+          <li>Supplier vetting</li>
+          <li>One consolidated invoice</li>
+        </ul>
+        <a href="#contact" class="link-arrow card__quote" data-prefill data-service="Wholesale supply">
+          Quote wholesale supply
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY MOBEL — split: photo collage left, argument right
+     ============================================================ -->
+<section class="section section--mist" id="about">
+  <div class="shell split">
+
+    <div class="split__media reveal">
+      <div class="frame">
+        <img src="hero-image.png" alt="Mobel ground crew loading palletised cargo into a freighter at dawn" loading="lazy" width="1536" height="1024" />
+      </div>
+
+      <!-- floating credential chip -->
+      <div class="badge">
+        <div class="badge__ring">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div>
+          <strong>Licensed customs broker</strong>
+          <span>Bonded &amp; fully insured</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="split__body">
+      <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span> Why Mobel</p>
+      <h2 class="section__title reveal" data-reveal-delay="1">
+        Built by freight people, not by salespeople
+      </h2>
+      <p class="section__lead reveal" data-reveal-delay="1">
+        We started because of a problem we kept watching from the inside: the
+        freight booked by one company, the customs entry filed by another, and
+        the client left in the middle translating between them.
+      </p>
+
+      <ol class="points">
+        <li class="reveal" data-reveal-delay="2">
+          <span class="points__n">01</span>
+          <div>
+            <h3>One team holds the whole file</h3>
+            <p>The booking, the documents and the clearance sit with the same people, who answer for all three.</p>
+          </div>
+        </li>
+        <li class="reveal" data-reveal-delay="3">
+          <span class="points__n">02</span>
+          <div>
+            <h3>Landed cost quoted up front</h3>
+            <p>Goods, freight, duty, handling and delivery on one number — so the invoice at the end matches the quote at the start.</p>
+          </div>
+        </li>
+        <li class="reveal" data-reveal-delay="4">
+          <span class="points__n">03</span>
+          <div>
+            <h3>We'll talk you out of a bad lane</h3>
+            <p>If the route, the timing or the classification is wrong, we say so — even when it costs us the booking.</p>
+          </div>
+        </li>
+        <li class="reveal" data-reveal-delay="5">
+          <span class="points__n">04</span>
+          <div>
+            <h3>Paperwork prepared, not chased</h3>
+            <p>Certificates, licences and origin documents are handled as part of the job, before they hold a container at the port.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="section section--navy" id="process">
+  <div class="shell">
+
+    <header class="section__head section__head--light reveal">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__dot" aria-hidden="true"></span> How it works</p>
+      <h2 class="section__title">Four steps from enquiry to delivery</h2>
+      <p class="section__lead">
+        No portal to learn, no forms to chase. You send us the shipment; we
+        send you a plan, then keep you posted until it's on your dock.
+      </p>
+    </header>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__n">1</span>
+        <h3>Tell us the lane</h3>
+        <p>Origin, destination, roughly what and roughly how much. That's enough to start.</p>
+      </li>
+      <li class="step reveal" data-reveal-delay="1">
+        <span class="step__n">2</span>
+        <h3>We price it, all in</h3>
+        <p>Route, transit time and full landed cost back inside 24 hours, with the assumptions written down.</p>
+      </li>
+      <li class="step reveal" data-reveal-delay="2">
+        <span class="step__n">3</span>
+        <h3>We book and file</h3>
+        <p>Space secured, documents prepared, entry filed. You approve; we handle the rest.</p>
+      </li>
+      <li class="step reveal" data-reveal-delay="3">
+        <span class="step__n">4</span>
+        <h3>Cleared and delivered</h3>
+        <p>Cleared at the border and delivered to the door, with one invoice that matches the quote.</p>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     TRADE LANES
+     ============================================================ -->
+<section class="section" id="lanes">
+  <div class="shell">
+
+    <header class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> Coverage</p>
+      <h2 class="section__title">Lanes we run every week</h2>
+      <p class="section__lead">
+        Indicative door-to-door transit times on our core routes. Ask us about
+        anything not listed — most of what we move started as a lane nobody
+        else wanted to quote.
+      </p>
+    </header>
+
+    <div class="lanes">
+
+      <article class="lane reveal">
+        <p class="lane__mode">Ocean · FCL</p>
+        <h3 class="lane__route"><span>Shanghai</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg><span>Rotterdam</span></h3>
+        <dl class="lane__meta">
+          <div><dt>Transit</dt><dd>28–32 days</dd></div>
+          <div><dt>Departures</dt><dd>Weekly</dd></div>
+        </dl>
+        <a href="#contact" class="link-arrow lane__quote" data-prefill data-origin="Shanghai" data-destination="Rotterdam" data-service="Ocean freight — FCL">
+          Quote this lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="lane reveal" data-reveal-delay="1">
+        <p class="lane__mode">Ocean · FCL</p>
+        <h3 class="lane__route"><span>Nhava Sheva</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg><span>Jebel Ali</span></h3>
+        <dl class="lane__meta">
+          <div><dt>Transit</dt><dd>6–9 days</dd></div>
+          <div><dt>Departures</dt><dd>Twice weekly</dd></div>
+        </dl>
+        <a href="#contact" class="link-arrow lane__quote" data-prefill data-origin="Nhava Sheva" data-destination="Jebel Ali" data-service="Ocean freight — FCL">
+          Quote this lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="lane reveal" data-reveal-delay="2">
+        <p class="lane__mode">Air · Consolidated</p>
+        <h3 class="lane__route"><span>Shenzhen</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg><span>Los Angeles</span></h3>
+        <dl class="lane__meta">
+          <div><dt>Transit</dt><dd>4–6 days</dd></div>
+          <div><dt>Departures</dt><dd>Daily</dd></div>
+        </dl>
+        <a href="#contact" class="link-arrow lane__quote" data-prefill data-origin="Shenzhen" data-destination="Los Angeles" data-service="Air freight">
+          Quote this lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="lane reveal" data-reveal-delay="3">
+        <p class="lane__mode">Ocean · LCL</p>
+        <h3 class="lane__route"><span>Hamburg</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg><span>Mundra</span></h3>
+        <dl class="lane__meta">
+          <div><dt>Transit</dt><dd>22–26 days</dd></div>
+          <div><dt>Departures</dt><dd>Weekly</dd></div>
+        </dl>
+        <a href="#contact" class="link-arrow lane__quote" data-prefill data-origin="Hamburg" data-destination="Mundra" data-service="Ocean freight — LCL">
+          Quote this lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="lane reveal" data-reveal-delay="4">
+        <p class="lane__mode">Ocean · FCL</p>
+        <h3 class="lane__route"><span>Santos</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 7l5 5-5 5"/></svg><span>Antwerp</span></h3>
+        <dl class="lane__meta">
+          <div><dt>Transit</dt><dd>18–23 days</dd></div>
+          <div><dt>Departures</dt><dd>Weekly</dd></div>
+        </dl>
+        <a href="#contact" class="link-arrow lane__quote" data-prefill data-origin="Santos" data-destination="Antwerp" data-service="Ocean freight — FCL">
+          Quote this lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="lane lane--cta reveal" data-reveal-delay="5">
+        <h3>Not on the list?</h3>
+        <p>We quote lanes we don't yet run every week of the year. Send it over.</p>
+        <a href="#contact" class="link-arrow">
+          Ask about your lane
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHOLESALE
+     ============================================================ -->
+<section class="section section--mist" id="wholesale">
+  <div class="shell split split--reverse">
+
+    <div class="split__body">
+      <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span> Wholesale</p>
+      <h2 class="section__title reveal" data-reveal-delay="1">Buy at import pricing, without becoming an importer</h2>
+      <p class="section__lead reveal" data-reveal-delay="1">
+        Alongside freight, Mobel supplies goods in bulk. Because we are the
+        importer rather than a re-seller, goods, freight, duty and delivery
+        arrive on one invoice with the paperwork already prepared.
+      </p>
+
+      <p class="reveal" data-reveal-delay="2">
+        It suits anyone buying by the pallet or the container rather than by
+        the unit:
+      </p>
+
+      <ul class="chips reveal" data-reveal-delay="3">
+        <li>Retailers &amp; chains</li>
+        <li>Distributors</li>
+        <li>Manufacturers sourcing inputs</li>
+        <li>Online sellers</li>
+        <li>Hospitality groups</li>
+        <li>Contract packers</li>
+      </ul>
+
+      <div class="reveal" data-reveal-delay="4">
+        <a href="#contact" class="btn btn--navy" data-prefill data-service="Wholesale supply">
+          Request a wholesale list
+          <svg viewBox="0 0 24 24" class="btn__arrow" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Abstract globe. Drawn in SVG rather than shipped as a photo:
+         it scales to any screen, weighs nothing, and takes the brand
+         colours straight from CSS. -->
+    <div class="split__media reveal">
+      <div class="globe">
+        <svg viewBox="0 0 420 420" role="img" aria-label="Trade routes arcing between ports around a globe">
+          <defs>
+            <radialGradient id="g-core" cx="38%" cy="32%">
+              <stop offset="0%" stop-color="#1b4d8f" />
+              <stop offset="60%" stop-color="#0b2545" />
+              <stop offset="100%" stop-color="#061426" />
+            </radialGradient>
+            <linearGradient id="g-route" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e8c88f" />
+              <stop offset="100%" stop-color="#c09048" />
+            </linearGradient>
+          </defs>
+
+          <circle cx="210" cy="210" r="150" fill="url(#g-core)" />
+
+          <g class="globe__grid" fill="none" stroke="#7fa6d8" stroke-width="1">
+            <circle cx="210" cy="210" r="150" />
+            <ellipse cx="210" cy="210" rx="150" ry="52" />
+            <ellipse cx="210" cy="210" rx="150" ry="104" />
+            <ellipse cx="210" cy="210" rx="52" ry="150" />
+            <ellipse cx="210" cy="210" rx="104" ry="150" />
+            <line x1="60" y1="210" x2="360" y2="210" />
+          </g>
+
+          <g fill="none" stroke="url(#g-route)" stroke-width="2.5" stroke-linecap="round">
+            <path class="globe__route" d="M92 268 C 150 150, 280 140, 336 196" />
+            <path class="globe__route" d="M118 148 C 190 96, 288 118, 330 262" />
+            <path class="globe__route" d="M96 200 C 176 300, 268 306, 320 148" />
+          </g>
+
+          <g class="globe__nodes" fill="#e8c88f" stroke="none">
+            <circle cx="92"  cy="268" r="5" />
+            <circle cx="336" cy="196" r="5" />
+            <circle cx="118" cy="148" r="5" />
+            <circle cx="330" cy="262" r="5" />
+            <circle cx="96"  cy="200" r="5" />
+            <circle cx="320" cy="148" r="5" />
+          </g>
+        </svg>
+
+        <div class="globe__stat">
+          <strong>42</strong>
+          <span>countries<br />on the book</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     TODO: replace with real, attributable quotes before publishing.
+     ============================================================ -->
+<section class="section" id="clients">
+  <div class="shell">
+
+    <header class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> Clients</p>
+      <h2 class="section__title">What importers say once the first container lands</h2>
+    </header>
+
+    <div class="quotes">
+      <figure class="quotecard reveal">
+        <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+        <blockquote><p>“The duty estimate we were given before we placed the order was the duty we actually paid. After two years of surprises, that alone was worth moving.”</p></blockquote>
+        <figcaption><strong>Operations Director</strong><span>Home goods retailer</span></figcaption>
+      </figure>
+
+      <figure class="quotecard reveal" data-reveal-delay="1">
+        <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+        <blockquote><p>“They told us our classification was wrong on a lane they'd have made money on. We've sent them everything since.”</p></blockquote>
+        <figcaption><strong>Founder</strong><span>Industrial components importer</span></figcaption>
+      </figure>
+
+      <figure class="quotecard reveal" data-reveal-delay="2">
+        <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+        <blockquote><p>“One inbox instead of three. When a vessel rolled, we heard it from Mobel before we heard it from the carrier.”</p></blockquote>
+        <figcaption><strong>Supply Chain Lead</strong><span>Hospitality group</span></figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ — native <details>, so it works with JS switched off.
+     The script only adds the "close the others" behaviour.
+     ============================================================ -->
+<section class="section section--mist" id="faq">
+  <div class="shell faq">
+
+    <header class="section__head reveal">
+      <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> Questions</p>
+      <h2 class="section__title">Before you send the first enquiry</h2>
+    </header>
+
+    <div class="faq__list">
+      <details class="qa reveal" name="faq" open>
+        <summary>How fast can you quote a lane?</summary>
+        <div class="qa__body"><p>Inside 24 hours on our core routes, and usually the same day if you send origin, destination, commodity and approximate volume together. Unusual cargo — hazardous, oversized, temperature-controlled — can take an extra day while we confirm handling.</p></div>
+      </details>
+
+      <details class="qa reveal" name="faq" data-reveal-delay="1">
+        <summary>What does “landed cost” actually include?</summary>
+        <div class="qa__body"><p>Freight, origin and destination handling, customs entry, duty and taxes, and final delivery. Anything genuinely unknowable at quote time — demurrage from a delay at your end, for example — is listed as an assumption rather than buried.</p></div>
+      </details>
+
+      <details class="qa reveal" name="faq" data-reveal-delay="2">
+        <summary>Do you handle customs yourselves?</summary>
+        <div class="qa__body"><p>Yes. Classification, valuation and entry are filed in-house by our own licensed brokers. That's the whole point of the company — nothing is handed to a third party you then have to chase separately.</p></div>
+      </details>
+
+      <details class="qa reveal" name="faq" data-reveal-delay="3">
+        <summary>Is there a minimum shipment size?</summary>
+        <div class="qa__body"><p>No minimum for freight — LCL consolidation makes part-pallet volumes workable. Wholesale supply starts at pallet quantities, since below that the import pricing stops being worth the paperwork for either of us.</p></div>
+      </details>
+
+      <details class="qa reveal" name="faq" data-reveal-delay="4">
+        <summary>Can you work with our existing suppliers?</summary>
+        <div class="qa__body"><p>Yes, and most of our clients start that way. We collect from your factory, prepare the documents with them directly, and take it from there. We can also vet new suppliers on lanes we already run.</p></div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BAND
+     ============================================================ -->
+<section class="cta">
+  <div class="shell cta__inner reveal">
+    <div>
+      <h2>Send us a lane. We'll send back a price.</h2>
+      <p>Origin, destination, what you're moving and roughly how much — that's all it takes to start.</p>
+    </div>
+    <a href="#contact" class="btn btn--gold btn--lg">
+      Get a quote
+      <svg viewBox="0 0 24 24" class="btn__arrow" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section" id="contact">
+  <div class="shell contact">
+
+    <div class="contact__aside">
+      <p class="eyebrow reveal"><span class="eyebrow__dot" aria-hidden="true"></span> Contact</p>
+      <h2 class="section__title reveal" data-reveal-delay="1">Talk to someone who'll be on your file tomorrow</h2>
+      <p class="section__lead reveal" data-reveal-delay="1">
+        Send the origin, the destination, roughly what you're moving and
+        roughly how much. That's enough for us to come back with a route, a
+        timeline and a price.
+      </p>
+
+      <!-- TODO: replace every detail in this block with Mobel's real ones -->
+      <ul class="infolist">
+        <li class="reveal" data-reveal-delay="2">
+          <span class="infolist__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></span>
+          <div><strong>Operations desk</strong><a href="tel:+000000000000">+00 000 000 0000</a></div>
+        </li>
+        <li class="reveal" data-reveal-delay="3">
+          <span class="infolist__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div><strong>Enquiries</strong><a href="mailto:trade@mobel.com">trade@mobel.com</a></div>
+        </li>
+        <li class="reveal" data-reveal-delay="4">
+          <span class="infolist__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><strong>Head office</strong><span>Add Mobel's registered address</span></div>
+        </li>
+        <li class="reveal" data-reveal-delay="5">
+          <span class="infolist__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><strong>Hours</strong><span>Desk staffed 24/7 · Office Mon–Sat, 9–7</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Wired to Zoho CRM: every enquiry lands as a Lead in the
+         "Mobel Website Enquiry" webform (Setup > Channels > Webforms).
+         With JavaScript on, mobel-v2.js posts it into the hidden
+         iframe below so the visitor never leaves the page, and adds the
+         lane, service and campaign source to the Lead's description.
+         With JavaScript off, the browser posts the form directly and
+         Zoho redirects to thank-you.html. The xnQsjsdp / xmIwtLD keys
+         are public by design: they only allow creating Leads through
+         this one form. -->
+    <form class="form reveal" id="contact-form" data-reveal-delay="1"
+          action="https://crm.zoho.in/crm/WebToLeadForm" method="post"
+          accept-charset="UTF-8" target="zoho-sink" novalidate>
+
+      <input type="hidden" name="xnQsjsdp" value="21d52ed7ef7dcdae058d86fefa4ca5f8fd4d9bf10e56f542853f4c350cb78dd4" />
+      <input type="hidden" name="zc_gad" value="" />
+      <input type="hidden" name="xmIwtLD" value="39401a0bb244afa1d8baaaf94cf209eadaf9b90e48cf3129df44a09813b94b84b2759ddb3c9dc1721fca915bf5cfa9f2" />
+      <input type="hidden" name="actionType" value="TGVhZHM=" />
+      <input type="hidden" name="returnURL" value="https://praneet-admin.github.io/mobel/thank-you.html" />
+      <input type="hidden" name="Lead Source" value="Web Research" />
+      <input type="hidden" name="Lead Status" value="Not Contacted" />
+
+      <!-- Honeypot. Hidden from people, irresistible to bots: Zoho drops
+           any submission where this comes back filled in. -->
+      <div class="hp" aria-hidden="true">
+        <label for="hp-field">Leave this empty</label>
+        <input type="text" id="hp-field" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Last Name" autocomplete="name" placeholder="Jane Okafor" maxlength="80" required />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="Company" autocomplete="organization" placeholder="Okafor Trading Ltd" maxlength="200" />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" autocomplete="email" placeholder="jane@company.com" maxlength="100" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="Phone" autocomplete="tel" placeholder="+00 000 000 0000" maxlength="30" />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="origin">Origin</label>
+          <input type="text" id="origin" name="origin" placeholder="Port, city or country" />
+        </div>
+        <div class="field">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" name="destination" placeholder="Port, city or country" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service">
+          <option>Ocean freight — FCL</option>
+          <option>Ocean freight — LCL</option>
+          <option>Air freight</option>
+          <option>Customs clearance only</option>
+          <option>Warehousing</option>
+          <option>Wholesale supply</option>
+          <option>Not sure yet — advise me</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="Description" required maxlength="2500" placeholder="What you're shipping, where from and where to, and when it needs to move."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--gold btn--full">
+        Send enquiry
+        <svg viewBox="0 0 24 24" class="btn__arrow" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </button>
+
+      <p class="form__note">We use these details only to answer this enquiry. A real person replies — usually the same day.</p>
+
+      <!-- aria-live so a screen reader announces the result without moving focus -->
+      <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- Both forms post here, so the visitor stays on the page while
+         Zoho records the Lead. -->
+    <iframe name="zoho-sink" id="zoho-sink" title="Form submission" class="sink" tabindex="-1" aria-hidden="true"></iframe>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="shell">
+
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <a href="#home" class="brand brand--footer">
+          <img src="logo.png" alt="" class="brand__mark" width="830" height="540" />
+          <span class="brand__text">MOBEL<small>Global Trade</small></span>
+        </a>
+        <p>
+          A freight forwarder and customs broker that holds the whole file —
+          booking, documents and clearance — and quotes the landed cost up front.
+        </p>
+        <div class="social">
+          <a href="#" aria-label="Mobel on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 5a1.94 1.94 0 11-3.88 0 1.94 1.94 0 013.88 0zM3.5 8.5h3v12h-3zM10 8.5h2.9v1.6h.05A3.2 3.2 0 0116 8.3c3 0 3.6 2 3.6 4.5v7.7h-3v-6.9c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6v7h-3z"/></svg></a>
+          <a href="#" aria-label="Mobel on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 3h3.2l-7 8 8.3 10h-6.5l-5-6.2-5.8 6.2H1.4l7.5-8.6L1 3h6.7l4.6 5.8zM16.3 19.2h1.8L7.8 4.7H5.9z"/></svg></a>
+          <a href="mailto:trade@mobel.com" aria-label="Email Mobel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v.4l-10 6.3L2 6.4V6a1 1 0 011-1zm19 3.7V18a1 1 0 01-1 1H3a1 1 0 01-1-1V8.7l9.5 5.9a1 1 0 001 0z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Ocean freight</a></li>
+          <li><a href="#services">Air freight</a></li>
+          <li><a href="#services">Customs clearance</a></li>
+          <li><a href="#services">Warehousing</a></li>
+          <li><a href="#services">Door-to-door</a></li>
+          <li><a href="#wholesale">Wholesale supply</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">About Mobel</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#lanes">Trade lanes</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__col--wide">
+        <h3>Rate alerts</h3>
+        <p>A short monthly note on the lanes we run: rate movement, congestion and the customs changes worth knowing about.</p>
+        <form class="subscribe" id="subscribe" novalidate>
+          <label class="sr-only" for="sub-email">Email address</label>
+          <input type="email" id="sub-email" name="email" placeholder="you@company.com" required />
+          <button type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <p class="subscribe__status" id="sub-status" role="status" aria-live="polite"></p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Mobel. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Trading conditions</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Back to top. The ring fills as you scroll, so it doubles as a
+     read-progress indicator. -->
+<a href="#home" class="totop" id="totop" aria-label="Back to top">
+  <svg class="totop__ring" viewBox="0 0 44 44" aria-hidden="true">
+    <circle class="totop__track" cx="22" cy="22" r="20" />
+    <circle class="totop__fill" cx="22" cy="22" r="20" id="totop-fill" />
+  </svg>
+  <svg class="totop__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</a>
+
+<script src="mobel-v2.js?v=2" defer></script>
+</body>
+</html>
