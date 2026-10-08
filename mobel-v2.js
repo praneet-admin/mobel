@@ -229,11 +229,21 @@
     });
   }
 
+  function setSelect(select, wanted) {
+    if (!select || !wanted) return;
+    Array.prototype.forEach.call(select.options, function (opt) {
+      if (opt.text === wanted) select.value = opt.value || opt.text;
+    });
+  }
+
   function prefill(values) {
     var origin = document.getElementById("origin");
     var dest = document.getElementById("destination");
+    var qty = document.getElementById("quantity");
     if (origin && values.origin) origin.value = values.origin;
     if (dest && values.destination) dest.value = values.destination;
+    if (qty && values.quantity) qty.value = values.quantity;
+    setSelect(document.getElementById("category"), values.category);
     setService(document.getElementById("service"), values.service);
 
     var contact = document.getElementById("contact");
@@ -256,9 +266,10 @@
     quick.addEventListener("submit", function (e) {
       e.preventDefault();
       prefill({
-        origin: quick.elements.from.value.trim(),
+        category: quick.elements.category.value,
+        quantity: quick.elements.quantity.value.trim(),
         destination: quick.elements.to.value.trim(),
-        service: quick.elements.mode.value
+        service: "Full import: source, ship & clear"
       });
     });
   }
@@ -270,7 +281,8 @@
     prefill({
       origin: link.getAttribute("data-origin"),
       destination: link.getAttribute("data-destination"),
-      service: link.getAttribute("data-service")
+      service: link.getAttribute("data-service"),
+      category: link.getAttribute("data-category")
     });
   });
 
@@ -368,6 +380,9 @@
       var origin = f["origin"].value.trim();
       var destination = f["destination"].value.trim();
       var service = f["service"].value;
+      var category = f["category"].value;
+      var quantity = f["quantity"].value.trim();
+      var budget = f["budget"].value.trim();
 
       /* Zoho wants first and last name apart; one-word names stay whole
          in Last Name, which is the field Zoho insists on */
@@ -376,10 +391,15 @@
       var first = parts.length ? parts.join(" ") : "";
       if (fullName.split(" ").length === 1) first = "";
 
+      var fmt = function (n) { return Number(n).toLocaleString("en-US"); };
       var description = [
-        "WEBSITE ENQUIRY — " + service,
-        "Lane: " + (origin || "?") + " → " + (destination || "?"),
+        "WEBSITE ENQUIRY — " + category,
+        "Service: " + service,
+        "Quantity: " + (quantity ? fmt(quantity) + " units" : "not given"),
+        "Target budget: " + (budget ? "USD " + fmt(budget) : "not given"),
+        "Lane: " + (origin || "advise me") + " → " + (destination || "?"),
         "",
+        "Requirements:",
         message,
         "",
         "— Tracking —"
@@ -448,11 +468,11 @@
       });
       var addr = email.value.trim();
       hidden(post, "Last Name", addr.split("@")[0].slice(0, 80));
-      hidden(post, "Company", "Rate-alert subscriber");
+      hidden(post, "Company", "Price & stock alert subscriber");
       hidden(post, "Email", addr);
       hidden(post, "Lead Source", "Web Download");
       hidden(post, "Lead Status", "Not Contacted");
-      hidden(post, "Description", ["RATE-ALERT SUBSCRIBER — monthly lane & customs note", "", "— Tracking —"].concat(sourceLines()).join("\n"));
+      hidden(post, "Description", ["PRICE & STOCK ALERT SUBSCRIBER — monthly electronics price, stock and compliance note", "", "— Tracking —"].concat(sourceLines()).join("\n"));
       hidden(post, "aG9uZXlwb3Q", "");
       document.body.appendChild(post);
 
