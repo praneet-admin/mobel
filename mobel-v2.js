@@ -423,7 +423,8 @@
         if (btn) btn.disabled = false;
 
         if (ok) {
-          status.textContent = "Thanks, " + (first || last) + " — that's with our operations desk. You'll have a route and a price inside 24 hours.";
+          var greet = fullName.split(" ")[0].replace(/[^\p{L}\p{M}'-]/gu, "") || "there";
+          status.textContent = "Thanks, " + greet + " — that's with our electronics sales desk. You'll have suppliers, a lead time and a landed price inside 24 hours.";
           status.className = "form__status is-ok";
           contactForm.reset();
         } else {
