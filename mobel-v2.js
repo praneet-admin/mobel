@@ -380,9 +380,15 @@
       var origin = f["origin"].value.trim();
       var destination = f["destination"].value.trim();
       var service = f["service"].value;
-      var category = f["category"].value;
-      var quantity = f["quantity"].value.trim();
-      var budget = f["budget"].value.trim();
+      var category = f["Industry"].value;
+      var quantity = f["No of Employees"].value.trim();
+      var budget = f["Annual Revenue"].value.trim();
+
+      /* Priority for the sales desk: big orders are Hot, mid-size Warm.
+         Lands in the Lead's Priority field so reps sort by it. */
+      var qn = Number(quantity) || 0, bn = Number(budget) || 0;
+      var rating = (bn >= 100000 || qn >= 1000) ? "Hot" : (bn >= 20000 || qn >= 200) ? "Warm" : "Cold";
+      if (f["Rating"]) f["Rating"].value = rating;
 
       /* Zoho wants first and last name apart; one-word names stay whole
          in Last Name, which is the field Zoho insists on */
@@ -397,6 +403,7 @@
         "Service: " + service,
         "Quantity: " + (quantity ? fmt(quantity) + " units" : "not given"),
         "Target budget: " + (budget ? "USD " + fmt(budget) : "not given"),
+        "Priority: " + rating,
         "Lane: " + (origin || "advise me") + " → " + (destination || "?"),
         "",
         "Requirements:",
