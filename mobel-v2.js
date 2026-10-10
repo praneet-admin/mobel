@@ -390,6 +390,12 @@
       var rating = (bn >= 100000 || qn >= 1000) ? "Hot" : (bn >= 20000 || qn >= 200) ? "Warm" : "Cold";
       if (f["Rating"]) f["Rating"].value = rating;
 
+      /* Visitors who clicked through from a Zoho Campaigns email arrive with
+         utm_medium=email (or utm_source=zoho_campaigns); tag their Lead so the
+         CRM can report which campaigns bring in enquiries */
+      var fromCampaign = visitSource.utm_medium === "email" || /campaign/i.test(visitSource.utm_source || "");
+      f["Lead Source"].value = fromCampaign ? "Email Campaign" : "Web Research";
+
       /* Zoho wants first and last name apart; one-word names stay whole
          in Last Name, which is the field Zoho insists on */
       var parts = fullName.split(" ");
