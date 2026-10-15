@@ -365,6 +365,15 @@
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
+      var minUnits = Number(contactForm.elements["No of Employees"].value) || 0;
+      var minValue = Number(contactForm.elements["Annual Revenue"].value) || 0;
+      if (minUnits < 50 || minValue < 20000) {
+        status.textContent = "We take orders of at least 50 units and USD 20,000. Customs, duty and compliance costs make smaller shipments uneconomical.";
+        status.className = "form__status is-bad";
+        contactForm.elements[minUnits < 50 ? "No of Employees" : "Annual Revenue"].focus();
+        return;
+      }
+
       if (!contactForm.checkValidity()) {
         status.textContent = "Please fill in your name, email and message.";
         status.className = "form__status is-bad";

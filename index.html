@@ -216,7 +216,7 @@
         </div>
         <div class="field">
           <label for="q-qty">Quantity (units)</label>
-          <input type="number" id="q-qty" name="quantity" placeholder="e.g. 500" min="1" step="1" inputmode="numeric" autocomplete="off" />
+          <input type="number" id="q-qty" name="quantity" placeholder="Min. 50" min="50" step="1" inputmode="numeric" autocomplete="off" />
         </div>
         <div class="field">
           <label for="q-to">Deliver to</label>
@@ -786,7 +786,7 @@
 
       <details class="qa reveal" name="faq" data-reveal-delay="4">
         <summary>Is there a minimum order quantity?</summary>
-        <div class="qa__body"><p>It depends on the factory: usually one carton for accessories and around 100 units for phones or laptops. From our own stock in Dubai and Mumbai there is no minimum beyond a full carton.</p></div>
+        <div class="qa__body"><p>Yes. Every order needs at least <strong>50 units</strong> and <strong>USD 20,000</strong> in value. Customs clearance, duty filing and compliance paperwork cost roughly the same for any shipment, so smaller orders end up more expensive per unit than buying locally.</p></div>
       </details>
 
       <details class="qa reveal" name="faq" data-reveal-delay="5">
@@ -922,15 +922,15 @@
           </select>
         </div>
         <div class="field">
-          <label for="quantity">Quantity (units)</label>
-          <input type="number" id="quantity" name="No of Employees" placeholder="e.g. 500" min="1" step="1" inputmode="numeric" />
+          <label for="quantity">Quantity (units) · minimum 50</label>
+          <input type="number" id="quantity" name="No of Employees" placeholder="e.g. 500" min="50" step="1" inputmode="numeric" required />
         </div>
       </div>
 
       <div class="form__row">
         <div class="field">
-          <label for="budget">Target budget (USD, optional)</label>
-          <input type="number" id="budget" name="Annual Revenue" placeholder="e.g. 25000" min="0" step="100" inputmode="numeric" />
+          <label for="budget">Order value (USD) · minimum 20,000</label>
+          <input type="number" id="budget" name="Annual Revenue" placeholder="e.g. 25000" min="20000" step="100" inputmode="numeric" required />
         </div>
         <div class="field">
           <label for="service">What do you need?</label>
@@ -1091,7 +1091,7 @@
   <svg class="totop__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
 </a>
 
-<script src="mobel-v2.js?v=7" defer></script>
+<script src="mobel-v2.js?v=8" defer></script>
 <!-- Zoho SalesIQ live chat: visitors who chat are pushed to Zoho CRM as Leads (Lead Source: Chat) -->
 <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq1edf17887ad7cd2992fdc34a3bb763e55ad2f8c0a1cfd3e061923dbb8752e018" defer></script>
 </body>
